@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden.
+  </div>
+  <script>
+    // The bug lies in using an incorrect selector
+    const element = document.querySelector('div'); // Selecting the first div only
+    element.style.display = 'none';
+  </script>
+</body>
+</html>
